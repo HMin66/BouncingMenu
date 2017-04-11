@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:toolbar="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff8b90af"
+    android:id="@+id/rl"
+    tools:context="com.huangmin66.bouncingmenu.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        toolbar:popupTheme="@style/ToolbarPopupTheme"
+        toolbar:titleTextColor="@android:color/white"></android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="200dp"
+                android:layout_margin="20dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/ic_launcher"
+                />
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="400dp"
+                android:layout_margin="100dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/ic_launcher"
+                />
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="400dp"
+                android:layout_margin="100dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/ic_launcher"
+                />
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="400dp"
+                android:layout_margin="100dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/ic_launcher"
+                />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
